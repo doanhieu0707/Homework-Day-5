@@ -63,6 +63,11 @@ body {
 }
 
 .menu li:hover > a {
+    background-color: pink;
+    color: #3e5cca;
+}
+
+.menu li:hover > a {
   background-color: #2d4db7;
   color: #fff;
 }
@@ -98,10 +103,10 @@ body {
     font-size: 12px;
 }
 
-/* .form-label::after {
+.form-label::after {
     content: " *";
     color: red;
-} */
+}
 
 .form-input {
     width: 100%;
@@ -115,21 +120,8 @@ body {
     border-color: blueviolet;
 }
 
-/* .form-input:invalid {
+.form-input:invalid {
     border-color: red;
-} */
-
-.form-input:not(:placeholder-shown):invalid {
-  border-color: red;
-}
-
-.form-label--required::after {
-  content: " *";
-  color: red;
-}
-
-.form:focus-within {
-  box-shadow: 0 0 0 3px rgba(138, 43, 226, 0.2);
 }
 
 .avatar {
@@ -175,12 +167,14 @@ body {
     padding: 10px;
 }
 
+/* container */
 .pricing {
     display: flex;
     justify-content: center;
     gap: 30px;
 }
 
+/* card */
 .pricing-item {
     width: 260px;
     padding: 30px 20px;
@@ -264,8 +258,9 @@ body {
     margin:20px 0 10px;
 }
 
-.blog :not(h1):is(h2, h3) {
-  color: #3e5cca;
+.blog h2:not(h1),
+.blog h3:not(h1){
+    color:#3e5cca;
 }
 
 .blog img{

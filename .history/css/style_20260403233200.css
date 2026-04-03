@@ -264,8 +264,9 @@ body {
     margin:20px 0 10px;
 }
 
-.blog :not(h1):is(h2, h3) {
-  color: #3e5cca;
+.blog h2:not(h1),
+.blog h3:not(h1){
+    color:#3e5cca;
 }
 
 .blog img{
