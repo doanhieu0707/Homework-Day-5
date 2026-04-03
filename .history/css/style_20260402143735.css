@@ -1,0 +1,225 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background-color: gray;
+    font-family:
+        system-ui,
+        -apple-system,
+        BlinkMacSystemFont,
+        "Segoe UI",
+        Roboto,
+        Oxygen,
+        Ubuntu,
+        Cantarell,
+        "Fira Sans",
+        "Droid Sans",
+        "Helvetica Neue",
+        sans-serif;
+}
+
+/* ===== CV ===== */
+.cv {
+    background-color: white;
+    max-width: 765px;
+    padding: 32px 0;
+    margin: 28px auto 0px;
+}
+
+.cv .infor {
+    margin-left: 60px;
+    margin-right: 60px;
+}
+
+.header {
+    text-align: center;
+}
+
+.header p {
+    font-weight: 500;
+    margin-top: 8px;
+}
+
+.header .heading-1 {
+    font-weight: bold;
+    font-size: larger;
+    margin: 0;
+}
+
+.infor .work {
+    margin-top: 28px;
+}
+
+.work .heading-2 {
+    border-bottom: 2px solid #333;
+    padding-bottom: 6px;
+    font-weight: bold;
+}
+
+.part ul {
+    margin-left: 20px;
+    margin-top: 16px;
+    list-style-type: disc;
+}
+
+.part ul li {
+    line-height: 20px;
+    text-align: justify;
+}
+
+.part ul li::marker {
+    color: black;
+}
+
+.part .title {
+    display: flex;
+    margin-top: 12px;
+    justify-content: space-between;
+}
+
+.part .title span {
+    font-weight: bold;
+}
+
+.footer {
+    margin-top: 16px;
+}
+
+.footer .info {
+    border-bottom: 2px solid #333;
+    padding-bottom: 6px;
+    font-weight: bold;
+}
+
+.footer p {
+    margin-top: 16px;
+}
+
+.footer span {
+    font-weight: bold;
+}
+
+/* ===== Menu ===== */
+.menu {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0 45px;
+    font-size: 0;
+    background-color: #3e5cca;
+}
+
+.menu li {
+    display: inline-block;
+    position: relative;
+}
+
+.menu li::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 1px;
+    height: 100%;
+    background-color: #2d4db7;
+}
+
+.menu li:first-child::before {
+    display: none;
+}
+
+.menu li a {
+    display: inline-block;
+    color: white;
+    font-size: 16px;
+    padding: 21px;
+    text-decoration: none;
+}
+
+.menu li a::before {
+    content: "\25B6";
+    margin-right: 6px;
+    font-size: 10px;
+}
+
+.menu li:hover > a {
+    background-color: pink;
+    color: #3e5cca;
+}
+
+.menu li a:focus,
+.menu li a:target {
+    background-color: blueviolet;
+    color: red;
+}
+
+/* ===== Form ===== */
+.form {
+    max-width: 400px;
+    padding: 25px;
+    margin: 10px auto;
+    border-radius: 20px;
+    background-color: #fff;
+}
+
+.form-heading {
+    margin-bottom: 32px;
+    text-align: center;
+    font-size: 24px;
+    font-weight: bold;
+    color: red;
+}
+
+.form-group input:focus {
+    border: 1px solid blueviolet;
+}
+
+.form-group input:valid {
+    background-color: ;
+}
+
+.form-label {
+    display: block;
+    margin: 12px 0 4px;
+    font-weight: 600;
+    font-size: 12px;
+}
+
+.form-input {
+    width: 100%;
+    padding: 4px 8px;
+    border: 1px solid gray;
+    border-radius: 5px;
+    outline: none;
+}
+
+.avatar {
+    width: 100px;
+    height: 100px;
+    cursor: pointer;
+    border-radius: 50%;
+}
+
+.form-options label {
+    display: block;
+}
+
+.form-footer {
+    display: flex;
+    margin-top: 28px;
+    justify-content: space-between;
+}
+
+.btn {
+    display: inline-block;
+    padding: 4px 16px;
+    border-radius: 5px;
+    min-width: 100px;
+    text-align: center;
+    border: none;
+    background: rgb(87, 142, 230);
+    color: white;
+    text-decoration: none;
+    cursor: pointer;
+}
